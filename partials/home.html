@@ -1,0 +1,24 @@
+<div class="main-div">
+    <td-header></td-header>
+    <div ng-repeat="item in vm.data" class="items">
+        <p class="item-heading">{{item.name}}</p>
+        <p>
+            <span class="PullLeft">Email:</span>
+            <span class="PullRight">{{item.email}}</span>
+        </p>
+        <p>
+            <span class="PullLeft">Phone No:</span>
+            <span class="PullRight">{{item.phone}}</span>
+        </p>
+        <p>
+            <span class="PullLeft">Website:</span>
+            <span class="PullRight">{{item.website}}</span>
+        </p>
+        <p ng-repeat="(key , val) in item.company">
+            <span class="PullLeft">{{key}} :</span>
+            <span class="PullRight">{{val}}</span>
+        </p>
+
+    </div>
+    <td-footer></td-footer>
+</div>
